@@ -1,3 +1,3 @@
 # Table of contents
 
-* [README](README.md)
+* [Welcome to Plasma Docs](README.md)

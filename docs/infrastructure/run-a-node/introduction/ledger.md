@@ -34,7 +34,7 @@ If a transaction attempts to spend a Transaction Output that does not exist in B
 
 ## Authorization
 
-The blockchain ledger is generally publicly readable, but modifying it requires permission. Permissions are established by the users using "Locks". A lock requires a very specific "key" in order to be unlocked (although in this case, "key" is much broader than the term used in general cryptography). When creating a new UTxO on the chain, a Lock (or more specifically, a LockAddress) is provided. When spending an existing UTxO from the chain, the corresponding Proof ("key") is provided. Authorization validation ensures the Proof/key matches and is correct for the Lock.
+The blockchain ledger is generally publicly readable, but modifying it requires permission. Permissions are established by the users using "Locks". A lock requires a very specific "key" to be unlocked (although in this case, "key" is much broader than the term used in general cryptography). When creating a new UTxO on the chain, a Lock (or more specifically, a LockAddress) is provided. When spending an existing UTxO from the chain, the corresponding Proof ("key") is provided. Authorization validation ensures the Proof/key matches and is correct for the Lock.
 
 The exact rules are defined in BramblSc and used directly in this protocol.
 

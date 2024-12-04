@@ -1,8 +1,16 @@
+---
+description: >-
+  Connect to the Plasma network using supported RPC endpoints and network
+  configurations.
+---
+
 # Connect to a Network
 
 ## Bifrost Development Setup
 
-Bifrost officially supports development on Ubuntu. Other operating systems may still work, but the Apparatus team may be unable to support certain questions.
+Bifrost is a blockchain interoperability protocol that aims to bridge different blockchain networks, particularly focusing on providing staking liquidity across multiple chains.
+
+Bifrost officially supports development on Ubuntu. Other operating systems may still work, but the Plasma team may be unable to support certain questions.
 
 ### Installation
 

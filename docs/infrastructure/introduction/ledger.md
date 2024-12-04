@@ -36,11 +36,11 @@ If a transaction attempts to spend a Transaction Output that does not exist in B
 
 The blockchain ledger is generally publicly readable, but modifying it requires permission. Permissions are established by the users using "Locks". A lock requires a very specific "key" to be unlocked (although in this case, "key" is much broader than the term used in general cryptography). When creating a new UTxO on the chain, a Lock (or more specifically, a LockAddress) is provided. When spending an existing UTxO from the chain, the corresponding Proof ("key") is provided. Authorization validation ensures the Proof/key matches and is correct for the Lock.
 
-The exact rules are defined in BramblSc and used directly in this protocol.
+The exact rules are defined in the Plasma SDK and used directly in this protocol.
 
 ## Cost and Rewards
 
-Validating and performing bookkeeping for ledger transactions may be CPU/memory-intensive. The amount of work required to include each transaction is captured in a score known as "Cost". This cost is determined based on transaction size and estimated verification complexity. The resulting number does not correspond to a token quantity; it is just a number. The calculation is defined in BramblSc and used directly in the protocol.
+Validating and performing bookkeeping for ledger transactions may be CPU/memory-intensive. The amount of work required to include each transaction is captured in a score known as "Cost". This cost is determined based on transaction size and estimated verification complexity. The resulting number does not correspond to a token quantity; it is just a number. The calculation is defined in Plasma SDK and used directly in the protocol.
 
 Because of the work involved with operating a block-producing blockchain node, block producers are rewarded for their efforts. These rewards are captured as any "excess" tokens from each transaction included in their block. For example, if a transaction spends/consumes 50 tokens but only creates 40 tokens, there are 10 excess tokens. The block producer can claim this excess as a reward.
 

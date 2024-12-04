@@ -1,6 +1,6 @@
 # RPC
 
-Users interact with the blockchain using the Remote Procedure Call (RPC) layer. This layer is implemented using gRPC using the specification defined in [Topl/protobuf-specs](https://github.com/Topl/protobuf-specs).
+Users interact with the blockchain using the Remote Procedure Call (RPC) layer. This layer is implemented using gRPC using the specification defined in [Topl/protobuf-specs.](https://github.com/PlasmaLaboratories/plasma-protobuf-specs)
 
 In general, the RPC layer is bound to host `0.0.0.0` at the port `9084`. Only gRPC over HTTP/2 is supported directly by the node. To use gRPC-web, a separate proxy like Envoy should be used.
 

@@ -6,21 +6,11 @@ description: >-
 
 # Connect to a Network
 
-## Bifrost Development Setup
+## Plasma Development Setup
 
-Bifrost is a blockchain interoperability protocol that aims to bridge different blockchain networks, particularly focusing on providing staking liquidity across multiple chains.
-
-Bifrost officially supports development on Ubuntu. Other operating systems may still work, but the Plasma team may be unable to support certain questions.
+Plasma Node officially supports development on Ubuntu. Other operating systems may still work, but the Plasma team may be unable to support certain questions.
 
 ### Installation
-
-A [convenience script](https://github.com/Topl/Bifrost/blob/dev/docs/scripts/dev_setup.sh) is provided which will run the following steps automatically. We highly recommend reading the contents of the script before running it. The convenience script can be run by typing
-
-```sh
-source ./docs/scripts/dev_setup.sh
-```
-
-from the command line (from the repository root). Otherwise, the directions below will suffice.
 
 #### Docker, Java, and SBT
 
@@ -33,7 +23,7 @@ from the command line (from the repository root). Otherwise, the directions belo
    4. Run `sdk install java 11.0.17-tem`
    5. Run `sdk install sbt 1.7.3`
 
-### Bifrost
+### Plasma Node
 
-1. Clone https://github.com/Topl/Bifrost and checkout branch `dev`.
-2. Run `sbt compile` from the command line.
+* Run `git clone` [`https://github.com/PlasmaLaboratories/plasma-node`](https://github.com/PlasmaLaboratories/plasma-node)  and checkout branch `dev`.
+* Run `sbt compile` from the command line.

@@ -27,12 +27,12 @@ Run Bifrost Docker Image Directly
 
 Find the latest Tetra image from https://hub.docker.com/r/toplprotocol/bifrost-node/tags
 
-Note: Latest is currently tagged to Dion, our previous version of Bifrost. To use Tetra, use the bifrost-node:2.x.x images.
+
 
 Run in terminal
 
 ```sh
-docker run -it --rm -p 9084:9084 -p 9085:9085 toplprotocol/bifrost-node:2.0.0-beta3
+docker run -it --rm -p 9084:9084 -p 9085:9085 ghcr.io/plasmalaboratories/plasma-node:latest
 ```
 
 Run in background

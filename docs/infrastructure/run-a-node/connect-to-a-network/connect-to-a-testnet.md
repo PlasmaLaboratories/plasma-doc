@@ -4,21 +4,13 @@ Run the Plasma Node on the Plasma Genesis Testnet.
 
 ### Prerequisites
 
-
-
-### gRPC Endpoint
-
-https://testnet.topl.co:443
-
-### P2P
-
-https://testnet.topl.co:9085
+* Ensure you have [Docker](https://docs.docker.com/engine/install/) installed locally.
 
 ### Connect using Docker
 
 In this example, we will be using Docker to run the node.
 
-Connecting to a testnet is by adding it as a known peer. To do this via CLI, you can use `--knownPeers testnet.topl.co:9085`.&#x20;
+Connecting to a testnet is by adding it as a known peer. To do this via CLI, you can use `--knownPeers testnet.plasmalabs.tech:9085`.&#x20;
 
 You will also need to pass the `--config` which contains the genesis block information and other configuration requirements for the given testnet.
 

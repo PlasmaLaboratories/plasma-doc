@@ -2,7 +2,9 @@
 
 ### Ubuntu
 
-#### Install SDKMAN and Java
+### Prerequisites
+
+* Install SDKMAN and Java
 
 ```sh
 sudo apt install curl zip unzip
@@ -13,41 +15,66 @@ sdk install java
 
 #### Download and Run Jar
 
-Locate the latest version from https://github.com/Topl/Project-Bifrost/releases/latest
+Locate the latest version from [Plasma lastest release](https://github.com/PlasmaLaboratories/plasma-node/releases/latest).&#x20;
 
 ex:
 
 ```sh
-wget https://github.com/Topl/Bifrost/releases/download/v2.0.0-beta1/bifrost-node-2.0.0-beta3.jar 
+wget https://github.com/PlasmaLaboratories/plasma-node/releases/download/v0.1.4/plasma-node-0.1.4.jar
 ```
 
 Run
 
 ```sh
-java -jar bifrost-node-2.0.0-beta3.jar
+java -jar plasma-node-0.1.4.jar
 ```
 
 To see other options, use --help.
 
 ```sh
---config <str>              Zero or more config files (.conf, .json, .yaml) to apply to the node.
-                            Config files stack such that the last config file takes precedence. To
-                            specify an internal resource, prefix the value with "resource://".
---dataDir <str>             The directory to use when saving/reading blockchain data
---debug                     An optional flag to enable debug mode on this node.
---disableGenus              Disables the Genus server and Genus gRPC services
---knownPeers <str>          A comma-delimited list of host:port values to connect to at launch
-                            (i.e. 1.2.3.4:9084,5.6.7.8:9084)
---logbackFile <str>         An optional path to a logback.xml file to override the logging
-                            configuration of the node.
---orientDbDir <str>         The directory to use when saving/reading graph data
---orientDbPassword <str>    The password to use when connecting to OrientDB
---p2pBindHost <str>         The hostname to bind to for the P2P layer (i.e. localhost or 0.0.0.0)
---p2pBindPort <int>         The port to bind to for the P2P layer (i.e. 9084)
---rpcBindHost <str>         The hostname to bind to for the RPC layer (i.e. localhost or 0.0.0.0)
---rpcBindPort <int>         The port to bind to for the RPC layer (i.e. 9085)
---stakingDir <str>          The directory of the block producer's staking keys
---testnetStakerCount <int>  The number of stakers to initialize.
---testnetStakerIndex <int>  The index of the staker to launch.
---testnetTimestamp <long>   A UTC Unix epoch timestamp (ms) to use when seeding a private testnet.
+  --block-regtest-permission <bool>    Enables a testing mode for the node.
+  --cli <bool>                         An optional flag to run the CLI/Shell instead of regular node
+                                       operations.
+  --config <str>                       Zero or more config files (.conf, .json, .yaml) to apply to
+                                       the node. Config files stack such that the last config file
+                                       takes precedence. To specify an internal resource, prefix the
+                                       value with "resource://".
+  --data-dir <str>                     The directory to use when saving/reading blockchain data
+  --database-type <str>                The type of data storage to use. Valid options: `levelDb-jni`
+                                       (default), `levelDb-java`
+  --debug                              An optional flag to enable debug mode on this node.
+  --disable-indexer                    Disables the Indexer server and Indexer gRPC services
+  --ethereum-json-rpc-bind-host <str>  The hostname to bind to for the Ethereum JSON-RPC layer (i.e.
+                                       localhost or 0.0.0.0)
+  --ethereum-json-rpc-bind-port <int>  The port to bind to for the Ethereum JSON-RPC layer (i.e.
+                                       8545)
+  --idle <bool>                        An optional flag to run in no-op mode. The application will
+                                       sit idle until terminated. This is useful for creating
+                                       backups of the node's data.
+  --known-peers <str>                  A comma-delimited list of host:port values to connect to at
+                                       launch (i.e. 1.2.3.4:9084,5.6.7.8:9084)
+  --logback-file <str>                 An optional path to a logback.xml file to override the
+                                       logging configuration of the node.
+  --orient-db-dir <str>                The directory to use when saving/reading graph data
+  --orient-db-password <str>           The password to use when connecting to OrientDB
+  --p-2p-bind-host <str>               The hostname to bind to for the P2P layer (i.e. localhost or
+                                       0.0.0.0)
+  --p-2p-bind-port <int>               The port to bind to for the P2P layer (i.e. 9085)
+  --p-2p-public-host <str>             The hostname to bind for incoming connections for the P2P
+                                       layer (i.e. localhost or 0.0.0.0)
+  --p-2p-public-port <int>             The port to bind for incoming connections for the P2P layer
+                                       (i.e. 9084)
+  --prune-dir <str>                    Path to pruned data folder. NODE WILL RUN IN DATASTORES PRUNE
+                                       MODE if that path is defined (unless running in idle mode is
+                                       already defined)
+  --reward-address <LockAddress>       The reward address for block production
+  --rpc-bind-host <str>                The hostname to bind to for the RPC layer (i.e. localhost or
+                                       0.0.0.0)
+  --rpc-bind-port <int>                The port to bind to for the RPC layer (i.e. 9084)
+  --staking-address <StakingAddress>   The staking address for block production
+  --staking-dir <str>                  The directory of the block producer's staking keys
+  --testnet-staker-count <int>         The number of stakers to initialize.
+  --testnet-staker-index <int>         The index of the staker to launch.
+  --testnet-timestamp <long>           A UTC Unix epoch timestamp (ms) to use when seeding a private
+                                       testnet.
 ```

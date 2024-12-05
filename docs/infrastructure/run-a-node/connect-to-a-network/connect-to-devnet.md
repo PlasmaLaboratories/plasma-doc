@@ -4,7 +4,7 @@
 
 In this example, we will be using Docker to run the node.
 
-Connecting to a testnet is by adding it as a known peer. To do this via CLI, you can use `--knownPeers testnet.topl.co:9085`.&#x20;
+Connecting to a testnet is by adding it as a known peer. To do this via CLI, you can use `--knownPeers testnet.plasmalabs.tech:9085.`&#x20;
 
 You will also need to pass the `--config` which contains the genesis block information and other configuration requirements for the given testnet.
 

@@ -1,5 +1,11 @@
 # Connect to a Testnet
 
+Run the Plasma Node on the Plasma Genesis Testnet.
+
+### Prerequisites
+
+
+
 ### gRPC Endpoint
 
 https://testnet.topl.co:443
@@ -8,32 +14,31 @@ https://testnet.topl.co:443
 
 https://testnet.topl.co:9085
 
-### How to Connect
+### Connect using Docker
 
 In this example, we will be using Docker to run the node.
 
-The way to connect to a testnet is by adding it as a known peer. To do this via CLI, you can use `--knownPeers testnet.topl.co:9085`. You will also need to pass the `--config` which contains the genesis block information and other configuration requirements for the given testnet.
+Connecting to a testnet is by adding it as a known peer. To do this via CLI, you can use `--knownPeers testnet.topl.co:9085`.&#x20;
 
-The testnet configs are hosted on GitHub https://github.com/Topl/Genesis\_Testnets which can be automatically downloaded by Bifrost using the `--config https://raw.githubusercontent.com/Topl/Genesis_Testnets/main/testnet2/config.yaml` parameter.
+You will also need to pass the `--config` which contains the genesis block information and other configuration requirements for the given testnet.
 
-A full example of connecting to the node:
+The testnet configs are hosted on GitHub which can be automatically downloaded by Bifrost using the `--config` [`https://github.com/PlasmaLaboratories/plasma-genesis-testnets/blob/main/testnet/config.yaml`](https://github.com/PlasmaLaboratories/plasma-genesis-testnets/blob/main/testnet/config.yaml)parameter.
+
+### A full example of connecting to the node:
+
+To run the node in the background, mount `node` the folder into `/tmp/node` to keep persistent data&#x20;
+
+{% code overflow="wrap" %}
+```bash
+docker run -d -v ./node:/tmp/node ghcr.io/plasmalaboratories/plasma-node:dev 
+--disable-indexer --known-peers testnet.plasmalabs.tech:9085 \
+--config https://github.com/PlasmaLaboratories/plasma-genesis-testnets/blob/main/testnet/config.yaml
+```
+{% endcode %}
+
+### Show running node container&#x20;
 
 ```
-docker run --name bifrost-testnet -p 9085:9085 -p 9084:9084 toplprotocol/bifrost-node:2.0.0-beta3 \
-    --knownPeers testnet.topl.co:9085 \
-    --config https://raw.githubusercontent.com/Topl/Genesis_Testnets/main/testnet2/config.yaml
+docker ps
 ```
 
-### How to Get Funds
-
-Funds can be retrieved via our Faucet. https://faucet.topl.co/#/
-
-Detailed instructions coming soon!
-
-### Visualize Transactions
-
-Transactions can be viewed on our block explorer. https://explore.topl.co/#/
-
-Select the correct network from the dropdown in the top right corner and search using the search box.
-
-Detailed instructions coming soon!

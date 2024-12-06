@@ -20,13 +20,13 @@ Locate the latest version from [Plasma lastest release](https://github.com/Plasm
 ex:
 
 ```sh
-wget https://github.com/PlasmaLaboratories/plasma-node/releases/download/v0.1.4/plasma-node-0.1.4.jar
+wget https://github.com/PlasmaLaboratories/plasma-node/releases/download/dev/plasma-node-0.1.4.jar
 ```
 
 Run
 
 ```sh
-java -jar plasma-node-0.1.4.jar
+java -jar plasma-node-dev.jar
 ```
 
 To see other options, use --help.

@@ -12,18 +12,28 @@ Plasma Node officially supports development on Ubuntu. Other operating systems m
 
 ### Installation
 
-#### Docker, Java, and SBT
+* Install [Docker](https://docs.docker.com/engine/install/).
 
-1. Install [Docker](https://docs.docker.com/engine/install/).
-   1. Be sure to follow the Linux post-installation [steps](https://docs.docker.com/engine/install/linux-postinstall/), namely run `sudo usermod -aG docker $USER`
-2. Install Java and SBT using [SDKMAN](https://sdkman.io/install).
-   1. Prerequisite: Install zip and unzip `sudo apt install zip unzip`
-   2. Run `curl -s "https://get.sdkman.io" | bash`
-   3. Run `source "$HOME/.sdkman/bin/sdkman-init.sh"`
-   4. Run `sdk install java 11.0.17-tem`
-   5. Run `sdk install sbt 1.7.3`
+{% hint style="info" %}
+Be sure to follow the Linux post-installation [steps](https://docs.docker.com/engine/install/linux-postinstall/), namely run `sudo usermod -aG docker $USER`
+{% endhint %}
 
-### Plasma Node
+* Install Java and SBT using [SDKMAN](https://sdkman.io/install).
+* Install zip and unzip `sudo apt install zip unzip`
 
-* Run `git clone` [`https://github.com/PlasmaLaboratories/plasma-node`](https://github.com/PlasmaLaboratories/plasma-node)  and checkout branch `dev`.
-* Run `sbt compile` from the command line.
+## Plasma Node Setup Commands
+
+Enter the following commands in your terminal
+
+```
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java 11.0.17-tem
+sdk install sbt 1.7.3
+git clone https://github.com/PlasmaLaboratories/plasma-node
+git checkout branch main
+sbt compile
+```
+
+
+

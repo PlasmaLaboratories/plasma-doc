@@ -20,9 +20,9 @@ A blockchain is a sequence of "blocks", where each block contains a Header and a
 * The block must be produced by a registered staker
 * The block must include the correct "eta" value
 
-**Eta**
+**Epoch Randomness**
 
-Eta represents "epoch randomness". It is a 32-byte array that is stamped on each header and changes at the turn of each epoch.
+Epoch randomness is a 32-byte array that is stamped on each header and changes at the turn of each epoch.
 
 The updated value is calculated by taking the previous value and hashing it with the randomness (rho) values provided by each staker of the first 2/3 of the current epoch.
 

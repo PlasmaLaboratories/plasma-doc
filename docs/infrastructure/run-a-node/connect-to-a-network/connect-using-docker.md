@@ -1,7 +1,5 @@
 # Connect using Docker
 
-### Connect using Docker
-
 In this example, we will be using Docker to run the node.
 
 To connect to a network you add it to a known peer. To do this via CLI, you use `--knownPeers testnet.plasmalabs.tech:9085.`&#x20;

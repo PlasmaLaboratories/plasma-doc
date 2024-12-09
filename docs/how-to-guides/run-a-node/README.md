@@ -40,5 +40,5 @@ To run the Plasma unit test suite from the project directory: `sbt test`
 
 To publish a Docker image from the project directory for local testing: `sbt node/Docker/publishLocal`.&#x20;
 
-To use the locally published image, run `docker run toplprotocol/bifrost-node`.
+To use the locally published image, run `docker runghcr.io/plasmalaboratories/plasma-node:dev`.
 

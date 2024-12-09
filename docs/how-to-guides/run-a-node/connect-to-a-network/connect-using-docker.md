@@ -16,7 +16,7 @@ The network configurations are available on GitHub and can be automatically down
 
 {% tabs %}
 {% tab title="Devnet" %}
-```
+```bash
 docker run  -d -v ./node:/tmp/node ghcr.io/plasmalaboratories/plasma-node:dev 
 --disable-indexer --known-peers devnet.plasmalabs.tech:9085 \
 --config https://github.com/PlasmaLaboratories/plasma-genesis-testnets/blob/main/devnet/config.yaml
@@ -24,7 +24,7 @@ docker run  -d -v ./node:/tmp/node ghcr.io/plasmalaboratories/plasma-node:dev
 {% endtab %}
 
 {% tab title="Testnet" %}
-```
+```bash
 docker run -d -v ./node:/tmp/node ghcr.io/plasmalaboratories/plasma-node:dev 
 --disable-indexer --known-peers testnet.plasmalabs.tech:9085 \
 --config https://github.com/PlasmaLaboratories/plasma-genesis-testnets/blob/main/testnet/config.yaml

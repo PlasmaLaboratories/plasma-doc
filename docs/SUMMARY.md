@@ -51,8 +51,6 @@
     * [Plasma CLI](how-to-guides/developer-tools/plasma-cli.md)
     * [Bridge UI](how-to-guides/developer-tools/bridge-ui.md)
   * [Run a Node](how-to-guides/run-a-node/README.md)
-    * [Introduction to Plasma Node](how-to-guides/run-a-node/introduction-to-plasma-node/README.md)
-      * [What is a Node ?](how-to-guides/run-a-node/introduction-to-plasma-node/what-is-a-node.md)
     * [Connect to a Network](how-to-guides/run-a-node/connect-to-a-network/README.md)
       * [Run on Bare Metal](how-to-guides/run-a-node/connect-to-a-network/run-on-bare-metal.md)
       * [Connect using Docker](how-to-guides/run-a-node/connect-to-a-network/connect-using-docker.md)

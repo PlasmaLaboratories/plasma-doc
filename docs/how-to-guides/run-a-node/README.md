@@ -2,7 +2,9 @@
 
 ### What is a Node?
 
-A node is a computer or device that connects to a blockchain network, verifies transactions, and maintains a copy of the blockchain ledger. Nodes are the backbone of a blockchain, allowing the network to operate decentralized, secure, and transparently.CommentPlasma nodes are essential to the Plasma Protocol ecosystem, operating across multiple networks to maintain the blockchain's functionality. Each node runs the same [`Plasma-node`](https://github.com/PlasmaLaboratories/plasma-node) codebase but can be configured differently based on its purpose and network type.
+A node is a computer or device that connects to a blockchain network, verifies transactions, and maintains a copy of the blockchain ledger. Nodes are the backbone of a blockchain, allowing the network to operate decentralized, secure, and transparently.
+
+Plasma nodes are essential to the Plasma Protocol ecosystem, operating across multiple networks to maintain the blockchain's functionality. Each node runs the same [`Plasma-node`](https://github.com/PlasmaLaboratories/plasma-node) codebase but can be configured differently based on its purpose and network type.
 
 #### Supported Networks <a href="#supported-networks" id="supported-networks"></a>
 

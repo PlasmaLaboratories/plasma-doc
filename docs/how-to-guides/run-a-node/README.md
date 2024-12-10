@@ -6,7 +6,7 @@ A node is a computer or device that connects to a blockchain network, verifies t
 
 Plasma nodes are essential to the Plasma Protocol ecosystem, operating across multiple networks to maintain the blockchain's functionality. Each node runs the same [`Plasma-node`](https://github.com/PlasmaLaboratories/plasma-node) codebase but can be configured differently based on its purpose and network type.
 
-#### Supported Networks <a href="#supported-networks" id="supported-networks"></a>
+### Supported Networks <a href="#supported-networks" id="supported-networks"></a>
 
 Plasma operates across four distinct network environments, each serving different purposes.
 
@@ -15,7 +15,7 @@ Plasma operates across four distinct network environments, each serving differen
 * **Devnet**: Development network for experimental features
 * **Private Network**: Custom isolated network for specific use cases
 
-**Network Comparison**
+### **Network Comparison**
 
 | Network Type    | Purpose                 | Use Case                                    |
 | --------------- | ----------------------- | ------------------------------------------- |
@@ -24,7 +24,7 @@ Plasma operates across four distinct network environments, each serving differen
 | Devnet          | Development environment | Experimental features, early testing        |
 | Private Network | Isolated environment    | Custom implementations, private deployments |
 
-#### **Why Run a Node**  <a href="#why-run-a-node" id="why-run-a-node"></a>
+### **Why Run a Node**  <a href="#why-run-a-node" id="why-run-a-node"></a>
 
 Reasons why you should run a node:
 
@@ -34,7 +34,7 @@ Reasons why you should run a node:
 * To develop and test in isolation
 * To gather blockchain data for analytics
 
-#### **Node Types** <a href="#node-types" id="node-types"></a>
+### **Node Types** <a href="#node-types" id="node-types"></a>
 
 * **Validator Nodes:** Process transactions and secure the network
 * **RPC Nodes:** Handle API requests and serve data

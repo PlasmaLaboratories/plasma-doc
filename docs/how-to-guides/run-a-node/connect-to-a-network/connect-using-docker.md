@@ -42,9 +42,9 @@ Coming Soon.
 {% endtab %}
 {% endtabs %}
 
-### Troubleshoot
+### Troubleshooting
 
-In case you run into this warning
+If you encounter the following warning:
 
 {% code overflow="wrap" %}
 ```
@@ -52,7 +52,9 @@ WARNING: The requested image's platform (linux/amd64) does not match the detecte
 ```
 {% endcode %}
 
-Put this line `--platform linux/amd64` after the docker run.
+#### Solution
+
+To resolve this issue, add the `--platform linux/amd64` flag after the docker run command. This will ensure the container runs on the correct platform.
 
 ### Show running node container&#x20;
 

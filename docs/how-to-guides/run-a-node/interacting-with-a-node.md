@@ -16,7 +16,7 @@ function print_step() {
   local text=$1
   local seperator_length=${2:-80}
   local terminal_width=$(tput cols)
-  local total_width=$((seperator_length > terminal_width ? terminal_width : seperator_length))
+  local total_width=$((seperator_length > terminal_width ? terminal_width :     seperator_length))
   local text_length=${#text}
   local padding=$(( (total_width - text_length) / 2 ))
 
@@ -27,8 +27,6 @@ function print_step() {
 }
 ```
 {% endcode %}
-
-
 
 ## Plasma CLI Vars
 
@@ -79,6 +77,13 @@ alias plasma-cli="cs launch -r https://s01.oss.sonatype.org/content/repositories
 
 ## 2. Create a wallet
 
+{% hint style="info" %}
+**Note**
+
+* Keep your wallet password and mnemonic phrase secure
+* Back up your wallet files (`$PLASMA_WALLET_DB`, `$PLASMA_WALLET_JSON`, `$PLASMA_WALLET_MNEMONIC`)
+{% endhint %}
+
 {% code overflow="wrap" %}
 ```bash
 print_step "Creating the wallet"
@@ -99,7 +104,16 @@ export ADDRESS=$(plasma-cli wallet current-address --walletdb $PLASMA_WALLET_DB)
 ```
 {% endcode %}
 
-## 4. Create a transaction to transfer tokens to wallet
+## 4. Create a transaction to transfer tokens to the wallet
+
+{% hint style="info" %}
+**Note**
+
+* The transaction may take several minutes to be confirmed
+* The default fee is set to 10 tokens&#x20;
+{% endhint %}
+
+
 
 {% code overflow="wrap" %}
 ```bash

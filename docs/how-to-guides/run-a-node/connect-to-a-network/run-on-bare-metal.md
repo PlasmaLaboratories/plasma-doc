@@ -4,7 +4,7 @@
 
 ### Prerequisites
 
-* Install SDKMAN and Java
+* Install [SDKMAN](https://sdkman.io/) and [Java](https://www.java.com/download/ie_manual.jsp)
 
 ```sh
 sudo apt install curl zip unzip
@@ -17,13 +17,13 @@ sdk install java
 
 Locate the latest version from [Plasma lastest release](https://github.com/PlasmaLaboratories/plasma-node/releases/latest).&#x20;
 
-ex:
+## Example:
 
 ```sh
 wget https://github.com/PlasmaLaboratories/plasma-node/releases/download/dev/plasma-node-0.1.4.jar
 ```
 
-Run
+## Run
 
 ```sh
 java -jar plasma-node-dev.jar

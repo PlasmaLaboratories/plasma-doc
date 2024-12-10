@@ -42,6 +42,18 @@ Coming Soon.
 {% endtab %}
 {% endtabs %}
 
+### Troubleshoot
+
+In case you run into this warning
+
+{% code overflow="wrap" %}
+```
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8)
+```
+{% endcode %}
+
+Put this line `--platform linux/amd64` after the docker run.
+
 ### Show running node container&#x20;
 
 ```
